@@ -36,7 +36,7 @@ class GitWeight < Formula
   test do
     assert_equal "git-weight #{version}\n", shell_output("#{bin}/git-weight --version")
     system "git", "init", "-q", "fixture"
-    report = JSON.parse(shell_output("#{bin}/git-weight summary fixture --json"))
+    report = JSON.parse(shell_output("#{bin}/git-weight summary --repo fixture --json"))
     assert_equal 0, report.fetch("objects").fetch("blob").fetch("count")
   end
 end
