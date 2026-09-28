@@ -2,30 +2,30 @@
 class GitWeight < Formula
   desc "Find what is weighing down your Git repository"
   homepage "https://github.com/kris-hansen/git-weight"
-  version "0.4.0"
+  version "0.5.0"
   license "MIT"
 
   depends_on macos: :sonoma if OS.mac?
 
   on_macos do
     on_arm do
-      url "https://github.com/kris-hansen/git-weight/releases/download/v0.4.0/git-weight-darwin-arm64.tar.gz"
-      sha256 "3aaeaa83eb621c1f83d2ba92f50d02912a93361cad616230f7de4a9db6f5225f"
+      url "https://github.com/kris-hansen/git-weight/releases/download/v0.5.0/git-weight-darwin-arm64.tar.gz"
+      sha256 "f14d9da7f50dc83803b63c5f0fa5afb11d6aaaf7e1157b4dadc6ef9bcea6e289"
     end
     on_intel do
-      url "https://github.com/kris-hansen/git-weight/releases/download/v0.4.0/git-weight-darwin-amd64.tar.gz"
-      sha256 "6803eb2d016d2b15ab30b6ce82d011c12f36cd7f8ed98c033ef9dbd3384b0968"
+      url "https://github.com/kris-hansen/git-weight/releases/download/v0.5.0/git-weight-darwin-amd64.tar.gz"
+      sha256 "df4d2545e370d3c932ec8129ab6ec38ed76e0a883e6791dea07c66b024ba0b51"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/kris-hansen/git-weight/releases/download/v0.4.0/git-weight-linux-arm64.tar.gz"
-      sha256 "42b50366f6477bf1a72ed4e075a9e8c957d22adb85e1554651519cf35a3e4360"
+      url "https://github.com/kris-hansen/git-weight/releases/download/v0.5.0/git-weight-linux-arm64.tar.gz"
+      sha256 "416942abd454aa7f26d3c1aeb0aa2a0b445dd657f6b0c57f2e0e700a0a17d7e3"
     end
     on_intel do
-      url "https://github.com/kris-hansen/git-weight/releases/download/v0.4.0/git-weight-linux-amd64.tar.gz"
-      sha256 "e3ec55b20a51bb51cd83d81d1ab3b620f7dbac6def26b9edc1ad74769e6af365"
+      url "https://github.com/kris-hansen/git-weight/releases/download/v0.5.0/git-weight-linux-amd64.tar.gz"
+      sha256 "7b8ca681a5df0c7e04fb41880e332b527729a28e728a8c6c8657ba409e35bdd5"
     end
   end
 
